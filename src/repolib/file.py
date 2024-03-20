@@ -28,8 +28,6 @@ import dbus
 from .source import Source, SourceError
 from . import util
 
-FILE_COMMENT = "## Added/managed by repolib ##"
-
 class SourceFileError(util.RepoError):
     """ Exception from a source file."""
 
@@ -65,9 +63,6 @@ class SourceFile:
         self.format:util.SourceFormat = util.SourceFormat.DEFAULT
         self.contents:list = []
         self.sources:list = []
-
-        self.contents.append(FILE_COMMENT)
-        self.contents.append('#')
 
         if name:
             self.name = name
