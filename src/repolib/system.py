@@ -64,5 +64,4 @@ def load_all_sources() -> None:
         for source in file.sources:
             if source.ident in util.sources:
                 source.ident = f'{file.name}-{source.ident}'
-                source.file.save()
             util.sources[source.ident] = source
