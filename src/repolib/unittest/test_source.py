@@ -134,7 +134,7 @@ class SourceTestCase(unittest.TestCase):
     
     def test_output_legacy(self):
         source_string = (
-            'deb [arch=amd64,armel lang=en_US,en_CA] http://example.com/ubuntu suite main contrib nonfree  ## X-Repolib-Name: Test Legacy Source # X-Repolib-ID: test-legacy'
+            'deb [arch=amd64,armel lang=en_US,en_CA] http://example.com/ubuntu suite main contrib nonfree'
         )
         self.assertEqual(self.source_legacy.legacy, source_string)
 

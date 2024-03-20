@@ -903,14 +903,14 @@ class Source(deb822.Deb822):
         legacy += f'{self.uris[0]} '
         legacy += f'{self.suites[0]} '
 
-        for component in self.components:
-            legacy += f'{component} '
-        
-        legacy += f' ## X-Repolib-Name: {self.name}'
-        legacy += f' # X-Repolib-ID: {self.ident}'
-        if self.comments:
-            for comment in self.comments:
-                legacy += f' # {comment}'
+
+        legacy += " ".join(self.components)
+
+        #legacy += f' ## X-Repolib-Name: {self.name}'
+        #legacy += f' # X-Repolib-ID: {self.ident}'
+        # if self.comments:
+        #     for comment in self.comments:
+        #         legacy += f' # {comment}'
 
         return legacy
 
