@@ -1,3 +1,48 @@
+repolib (2.2.1+mint1) wilma; urgency=medium
+
+  [ Ian Santopietro ]
+  * build(setup): fix broken package discovery
+  * build(debian): add install file to ensure extra files get installed
+  * fix: catch dbus exceptions and inform the user that sudo is required
+
+  [ Brock Szuszczewicz ]
+  * Add -y flag to apt-manage add
+
+  [ 13r0ck ]
+  * Do not crash if dbus conncetion fails to disconnect
+
+  [ Gal Szkolnik ]
+  * chore: improved installation instructions for Ubuntu and Debian
+
+  [ Owen Valentine ]
+  * Add missing extra deps
+  * Extras from debian/control
+
+  [ leviport ]
+  * Docs: replace invalid example PPA with System76 pre-stable PPA
+
+  [ Ben Harris ]
+  * Fix typo in deb822-format.rst
+
+  [ ktetzlaff ]
+  * fix(build): add apt-manage to pyproject.toml
+  * fix(file): fix parsing of multiline values
+
+  [ Jeremy Soller ]
+  * Fix invalid URLs in tests
+
+  [ ktetzlaff ]
+  * fix(system): ignore directories in /etc/apt/sources.list.d
+  * fix(cli/list): fix listing of legacy sources when sources.list is missing
+
+  [ Clement Lefebvre ]
+  * load_all_sources(): Don't save files
+  * file: Don't add header comments in new files
+  * legacy: Don't add comments
+  * Remove the CLI
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 18 Jun 2024 22:26:36 +0100
+
 repolib (2.2.1) jammy; urgency=medium
 
   * Build system improvements
