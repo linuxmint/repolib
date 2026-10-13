@@ -1,3 +1,11 @@
+repolib (2.2.1+mint2) adrien; urgency=medium
+
+  [ Michael Webster ]
+  * debian/control: Add alternative to python3-distutils.
+  * source.py: Treat a source with no Enabled field as enabled
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 13 Oct 2026 15:45:19 +0100
+
 repolib (2.2.1+mint1) wilma; urgency=medium
 
   [ Ian Santopietro ]
